@@ -5,28 +5,6 @@ Build command is `npm run build` and the publish directory is `dist`
 To start developing, use `npm start` and follow the link in the console,
 example: `http://localhost:5173/`
 
-# Forms
-
-Change the form submission address in 2 files:
-`contactForm.js`,`certificateForm.js`
-
-```js
-
-try {
-    // await axios.post('https://form.exemple.com', formData, {
-    //   headers: {
-    //     'Content-Type': 'multipart/form-data',
-    //   },
-    // });
-
-    for (let [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`);
-    }
-
-```
-
-<br/>
-
 # Partials
 
 _Used for convenience of development and splitting the html page into parts._
