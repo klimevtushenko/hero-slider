@@ -1,0 +1,153 @@
+.realty-hero {
+  padding-top: 130px;
+  background-image: url('/img/realty/hero/realty-hero-bg.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.realty-hero .container {
+  display: flex;
+  justify-content: space-between;
+}
+.realty-hero-title-wrapper {
+  .btn {
+    margin-top: 32px;
+  }
+}
+.realty-hero-title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: var(--neutral-white);
+  max-width: 520px;
+}
+.realty-hero-text {
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--neutral-white);
+  margin-top: 16px;
+}
+
+.realty-hero-keywords-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 290px;
+  margin-top: 70px;
+}
+.realty-hero-keywords {
+  display: inline-flex;
+  border: 1px solid var(--accent-blue);
+  border-radius: 60px;
+  padding: 6px 12px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
+
+  span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: lowercase;
+    text-align: center;
+    color: var(--neutral-white);
+  }
+}
+
+/*-----------------*/
+
+.realty-hero-slider-wrapper {
+  position: relative;
+  align-self: flex-end;
+}
+.js-realty-hero-swiper {
+  right: -26px;
+  max-width: 600px;
+}
+.swiper-wrapper {
+  padding-top: 24px;
+}
+
+.realty-hero-slide {
+  border: 1px solid var(--neutral-white);
+  border-radius: 16px;
+  min-width: 258px;
+  min-height: 159px;
+  padding: 8px;
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.2);
+
+  &::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    border-radius: 16px;
+    background-color: rgba(15, 16, 18, 0.2);
+  }
+}
+
+.realty-hero-slide-img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  max-width: 282px;
+  max-height: 167px;
+}
+
+.realty-swiper-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+}
+
+.realty-swiper-btn-icon {
+  color: var(--neutral-white);
+  transition: color var(--timing-function-1);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--accent-blue);
+    }
+  }
+
+  @media (pointer: fine) {
+    cursor: pointer;
+  }
+}
+
+.realty-hero-swiper-scrollbar {
+}
+
+.realty-hero-swiper-pagination {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: -1;
+}
+
+:root {
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: 10px;
+
+  --swiper-scrollbar-sides-offset: 10%;
+  --swiper-scrollbar-bg-color: rgba(255, 255, 255, 0.15);
+  --swiper-scrollbar-drag-bg-color: var(--neutral-white);
+  --swiper-scrollbar-size: 3px;
+}
+
+.number {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 136%;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--neutral-white);
+  width: 20px;
+}
+
+.space {
+  width: 60%;
+}

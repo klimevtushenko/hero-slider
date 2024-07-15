@@ -1,0 +1,18 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+
+<symbol id="icon-arrow-right" viewBox="0 0 44 32">
+<path fill="currentColor" opacity="0.8" d="M37.354 16.354c0.195-0.195 0.195-0.512 0-0.707l-3.182-3.182c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l2.828 2.828-2.828 2.828c-0.195 0.195-0.195 0.512 0 0.707s0.512 0.195 0.707 0l3.182-3.182zM5 16.5h32v-1h-32v1z"></path>
+</symbol>
+
+<symbol id="icon-arrow-left" viewBox="0 0 44 32">
+<path fill="currentColor" opacity="0.8" d="M13.646 15.646c-0.195 0.195-0.195 0.512 0 0.707l3.182 3.182c0.195 0.195 0.512 0.195 0.707 0s0.195-0.512 0-0.707l-2.828-2.828 2.828-2.828c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-3.182 3.182zM30 15.5h-16v1h16v-1z"></path>
+</symbol>
+
+<symbol id="icon-arrow-btn" viewBox="0 0 32 32">
+<path fill="none" stroke="#fbfdff" style="stroke: var(--color1, #fbfdff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.3846" d="M19.178 8.062l7.938 7.938-7.938 7.938"></path>
+<path fill="none" stroke="#fbfdff" style="stroke: var(--color1, #fbfdff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.3846" d="M4.885 16h22.008"></path>
+</symbol>
+
+</defs>
+</svg>

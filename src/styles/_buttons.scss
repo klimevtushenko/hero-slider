@@ -1,0 +1,113 @@
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--blue);
+  border: 1px solid white;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 0;
+  transition: all 250ms ease-out;
+  pointer-events: none;
+  max-width: 274px;
+
+  &.show {
+    opacity: 0.6;
+    pointer-events: all;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @include tablet {
+    bottom: 50px;
+    right: 50px;
+  }
+
+  @media (pointer: fine) {
+    cursor: pointer;
+  }
+}
+
+.scroll-to-top-icon {
+  transform: rotate(180deg);
+}
+
+/*-------------------------------*/
+.btn {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 60px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  background-color: var(--accent-blue);
+  z-index: 1;
+  inset: 0;
+  clip-path: circle(1px at 30px bottom);
+  transition: all var(--timing-function);
+}
+
+.btn-text {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115%;
+  text-transform: lowercase;
+  text-align: center;
+  color: var(--neutral-white);
+  background-color: var(--accent-blue);
+  border-radius: 60px;
+  padding: 14px 28px;
+  width: 226px;
+  height: 48px;
+  transition: all var(--timing-function);
+}
+
+.btn-icon-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-blue);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: all var(--timing-function);
+}
+
+.btn-icon {
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    &::after {
+      clip-path: circle(280px at left bottom);
+    }
+
+    .btn-text,
+    .btn-icon-wrapper {
+      background-color: transparent;
+    }
+  }
+}
